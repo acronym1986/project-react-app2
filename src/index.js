@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {CaseContextProvider} from './contexts/CaseContext';
 ReactDOM.render(
   <React.StrictMode>
+    <CaseContextProvider>
     <App />
-  </React.StrictMode>,
+    </CaseContextProvider>
+  </React.StrictMode>
+  ,
   document.getElementById('root')
 );
 
